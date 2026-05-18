@@ -7,17 +7,17 @@ Student: Dicle Ezgi İlhan
 
 # Motivation
 
-The Cambridge Analytica scandal became one of the most significant privacy controversies involving Facebook (Meta). After the scandal became public in 2018, discussions regarding data privacy, Facebook usage, and digital ethics increased significantly worldwide. Many users reacted online through searches, discussions, and information-seeking behavior.
+The Cambridge Analytica scandal became one of the most widely discussed privacy controversies involving Facebook (Meta). After the scandal became public in 2018, online discussions about data privacy, Facebook usage, and digital ethics increased significantly. Many users reacted through searches, discussions, and information-seeking behavior on digital platforms.
 
-This project aims to analyze how public attention during the Cambridge Analytica scandal was reflected in online behavior indicators and whether these indicators were associated with Meta’s stock price movements.
+I became interested in understanding how these public reactions were reflected in online activity and whether they were associated with Meta’s stock movements during the same period. This project analyzes online behavior indicators such as Google Trends searches and Wikipedia pageviews together with Meta stock price data.
 
-Rather than establishing direct causality, the project focuses on identifying patterns and associations between public attention indicators and financial market behavior during a major technological controversy.
+Rather than trying to establish direct causality, the analysis focuses on identifying patterns and associations between public attention indicators and financial market behavior during a major technological controversy.
 
 ---
 
 # Data Sources
 
-This project integrates three publicly available datasets covering the period between 2015 and 2021.
+The analysis combines three publicly available datasets covering the period between 2015 and 2021.
 
 ## 1. Google Trends Data
 
@@ -189,13 +189,20 @@ Although some models achieved relatively high R² values, predicting stock price
 
 # Key Findings
 
-- Significant increases in Google search activity occurred during the scandal period
-- Wikipedia pageviews sharply increased after the scandal became public
-- Meta stock prices fluctuated around the same timeline
-- Non-linear machine learning models outperformed Linear Regression
-- Online public attention indicators may be associated with Meta stock movements
+1. **Public attention increased during the scandal**  
+   Google Trends data showed clear spikes in searches such as “delete facebook,” “facebook privacy,” and “cambridge analytica” around the scandal period.
 
-Overall, the findings suggest that digital public reactions may reflect broader behavioral and financial responses during major technological controversies.
+2. **Wikipedia activity reflected information-seeking behavior**  
+   Wikipedia pageviews for Cambridge Analytica and Facebook increased during the scandal period, showing that users actively searched for more information after the controversy became public.
+
+3. **Online behavior indicators were associated with Meta stock movements**  
+   Correlation analysis suggested that some public attention indicators were associated with Meta stock price movements, but these relationships should be interpreted as associations rather than causal effects.
+
+4. **Non-linear models outperformed Linear Regression**  
+   Random Forest, KNN, and Decision Tree models performed better than Linear Regression, suggesting that the relationship between online behavior indicators and stock movements may be complex and non-linear.
+
+5. **Stock price prediction remains difficult**  
+   Although some models achieved relatively high R² values, predicting stock prices directly remains difficult because financial markets are influenced by many external factors.
 
 ---
 
@@ -230,6 +237,7 @@ Future work could include:
 - pandas
 - numpy
 - matplotlib
+- seaborn
 - scipy
 - scikit-learn
 - pytrends
@@ -245,8 +253,6 @@ project/
 ├── data/
 │   ├── raw/
 │   └── processed/
-├── notebooks/
-├── figures/
 ├── requirements.txt
 └── README.md
 ```
